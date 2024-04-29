@@ -6,6 +6,7 @@ import { Postagem } from './postagem/entities/postagem.entity';
 import { PostagemModule } from './postagem/postagem.module';
 import { TemaModule } from './tema/tema.module';
 import { Tema } from './tema/entities/tema.entity';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -20,7 +21,8 @@ import { Tema } from './tema/entities/tema.entity';
       synchronize: true,
     }),
     PostagemModule,
-    TemaModule
+    TemaModule,
+    AuthModule
   ],
   controllers: [],
   providers: [],
